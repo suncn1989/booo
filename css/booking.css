@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, font { padding: 0; margin: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; vertical-align: top; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
+ol, ul, li, dl, dt, dd { list-style: none; }
+input, button, textarea, checkbox, select, radio, form { vertical-align: top; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+.left { float: left; display: inline; }
+.right { float: right; display: inline; }
+a { color: #808080; }
+a:hover { color: #000;}
+a,a:focus{outline:none}
+body { font-family: "Helvetica Neue",\5FAE\8F6F\96C5\9ED1,Tohoma;background: #f1f3fa;line-height: 1; }
+*{box-sizing:border-box;-webkit-box-sizing:border-box;}
+
+#banner
+{
+
+}
+
+#container
+{
+
+}
+
+#foot
+{
+
+}
