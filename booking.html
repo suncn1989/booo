@@ -9,21 +9,68 @@
         <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./css/font-awesome-ie7.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrapValidator.min.css">
         <link rel="stylesheet" type="text/css" href="./css/booking.css">
 
-        <script src="./js/bootstrap.min.js"></script>
+        
         <script src="./js/jquery-1.9.1.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/bootstrapValidator.min.js"></script>
+        <script src="./js/jquery.smart-form.js"></script>
+        <script src="./js/global.js"></script>
+		<script src="./js/booking.js"></script>
+        
 </head>
 
 <body>
-	<div id="banner">
+	<div class="banner">
 		
 	</div>
 
-	<div id="container">
-		
+	<div class="container">
+    	
+    	<div class="city circle_radius bg_white innerPadding">
+        	<p class="container_p">选择城市：</p>
+            <ul class="nav nav-pills">
+              <li role="presentation" class="active"><a href="#" data-toggle="pill">南京</a></li>
+              <li role="presentation"><a href="#" data-toggle="pill">上海</a></li>
+            </ul>
+         </div>
+         
+         <div class="addr circle_radius bg_white innerPadding">
+         	<p class="container_p">服务地址及时间：</p>
+            <div class="col-lg-8 col-lg-offset-1">
+                
+                <form action="#" id="formContainer" class="form form-horizontal">
+                	<div class="form-group">
+                        <label class="col-lg-3 control-label">Username</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="username" autocomplete="off" />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Username</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="username" autocomplete="off" />
+                        </div>
+                    </div>
+                
+                </form>
+            </div>
+            
+            
+         </div>
+         
+         <div class="userInfo circle_radius bg_white innerPadding">
+         </div>
+         
+         <div class="confirm">
+         </div>
 	</div>
 
-	<div id="foot"></div>
+	<div class="foot">
+    	
+    </div>
 </body>
 </html>
