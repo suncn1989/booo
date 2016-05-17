@@ -16,8 +16,7 @@
         <script src="./js/jquery-1.9.1.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/bootstrapValidator.min.js"></script>
-        <script src="./js/jquery.smart-form.js"></script>
-        <script src="./js/global.js"></script>
+        <script src="./js/jquery.cxselect.min.js"></script>
 		<script src="./js/booking.js"></script>
         
 </head>
@@ -29,44 +28,146 @@
 
 	<div class="container">
     	
-    	<div class="city circle_radius bg_white innerPadding">
+    	<div class="C_city circle_radius bg_white innerPadding">
         	<p class="container_p">选择城市：</p>
             <ul class="nav nav-pills">
-              <li role="presentation" class="active"><a href="#" data-toggle="pill">南京</a></li>
-              <li role="presentation"><a href="#" data-toggle="pill">上海</a></li>
+              <li class="active" id="nanjing"><a href="#nj" data-toggle="tab">南京</a></li>
+              <li id="shanghai"><a href="#sh" data-toggle="tab">上海</a></li>
             </ul>
-         </div>
-         
-         <div class="addr circle_radius bg_white innerPadding">
-         	<p class="container_p">服务地址及时间：</p>
-            <div class="col-lg-8 col-lg-offset-1">
-                
-                <form action="#" id="formContainer" class="form form-horizontal">
-                	<div class="form-group">
-                        <label class="col-lg-3 control-label">Username</label>
-                        <div class="col-lg-5">
-                            <input type="text" class="form-control" name="username" autocomplete="off" />
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label class="col-lg-3 control-label">Username</label>
-                        <div class="col-lg-5">
-                            <input type="text" class="form-control" name="username" autocomplete="off" />
-                        </div>
-                    </div>
-                
-                </form>
+            <p class="container_p marginT20">选择项目：</p>
+            
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="nj">
+                    11111111111111111111111
+                </div>
+                <div class="tab-pane fade" id="sh">
+                    222222222222222222222
+                </div>
             </div>
-            
-            
          </div>
          
-         <div class="userInfo circle_radius bg_white innerPadding">
-         </div>
+         <form id="form_addr" method="post" class="form-horizontal" action="">
          
-         <div class="confirm">
-         </div>
+             <div class="addr circle_radius bg_white innerPadding">
+                <p class="container_p">服务地址及时间：</p>
+                <div class="col-xs-offset-1">
+                    
+                        <div class="form-group">
+                            <fieldset id="street_info">
+                                <div class="marginB10">
+                                    <label class="control-label">请选择服务地址：</label>
+                                </div>
+                                <div class="row">
+                                    
+                                    <div class="col-md-4 col-xs-12">
+                         
+                                        <select class="city form-control" data-first-title="选择城市" name="city">
+                                            <option value="">请选择</option>
+                                            <!--<option value="南京市" selected>南京市</option>-->
+                                        </select>
+                                     </div>
+                                     <div class="col-md-4 col-xs-12"> 
+    
+                                        <select class="district form-control" data-first-title="选择区/县" name="district">
+                                            <option value="">请选择</option>
+                                            <!--<option value="玄武区" selected>玄武区</option>-->
+                                        </select>
+                                     </div>
+                                     <div class="col-md-4 col-xs-12"> 
+    
+                                        <select class="street form-control" data-first-title="选择街道" name="street">
+                                            <option value="">请选择</option>
+                                            <!--<option value="1街道" selected>4</option>-->
+                                        </select>
+                                     </div>
+                                
+                                </div>
+                            </fieldset>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-12 col-xs-12">
+                                    <label class="control-label">详细门牌号码：</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <input type="text" class="form-control" name="detail_addr" autocomplete="off" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                        	<fieldset id="serve_date_time">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label class="control-label">服务时间：</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <select class="serve_date form-control" data-first-title="选择日期" name="serve_date">
+                                                <option value="">请选择</option>
+                                                <!--<option value="玄武区" selected>玄武区</option>-->
+                                        </select>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <select class="serve_time form-control" data-first-title="选择时间" name="serve_time">
+                                                <option value="">请选择</option>
+                                                <!--<option value="玄武区" selected>玄武区</option>-->
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-12 col-xs-12">
+                                    <label class="control-label">留言信息：</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <input type="text" class="form-control" name="detail_message" autocomplete="off"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                            
+    
+                </div>
+                
+                
+             </div>
+             
+             <div class="userInfo circle_radius bg_white innerPadding">
+                <p class="container_p">用户信息：</p>
+                <div class="col-xs-offset-1">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-12 col-xs-12">
+                                    <label class="control-label">用户姓名：</label>
+                                </div>
+                                <div class="col-xs-5">
+                                    <input type="text" class="form-control" name="username" autocomplete="off" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-12 col-xs-12">
+                                    <label class="control-label">联系电话：</label>
+                                </div>
+                                <div class="col-xs-5">
+                                    <input type="text" class="form-control" name="phoneNumberCN" autocomplete="off" />
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+             </div>
+             
+             <div class="confirm">
+                <button type="submit" class="btn btn-primary btn-lg">确认预约</button>
+             </div>
+         </form>
 	</div>
 
 	<div class="foot">

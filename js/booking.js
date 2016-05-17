@@ -1,73 +1,170 @@
 //tabs
 $(document).ready(function () 
 {
+	setSelectData("nanjing");
+	setSelectDateTimeData();
 	$('ul.nav > li').click(function (e) 
 	{
 		e.preventDefault();
+		/*
 		$('ul.nav > li').removeClass('active');
 		$(this).addClass('active');
+		*/
+		console.log($(this).attr("id"));
+		setSelectData($(this).attr("id"));
 	});
 });
 
-
-//selections
-$(function ()
+function setSelectData(cityName)
 {
-	var eles = [
-					[
-						{ ele: 
-								{ 
-									type: 'select', 
-									name: 'province', 
-									title: '省:', 
-									withNull: true, 
-									items: [
-												{ text: '广东', value: 'GuangDong', extendAttr: { id: 1000 } }, 
-												{ text: '湖南', value: 'HuNan', extendAttr: { id: 2000 } }
-											]
-								} 
-						},
-                        { ele: 
-								{ 
-									type: 'select', 
-									name: 'city', 
-									title: '市:', 
-									withNull: true, 
-									items: [
-												{ "text": "广州", "value": "GuangZhou", "extendAttr": { "id": "1000001", "parentId": "1000" } },
-												{ "text": "花都", "value": "HuaDu", "extendAttr": { "id": "1000002", "parentId": "1000" } }, 
-												{ "text": "邵阳", "value": "ShaoYang", "extendAttr": { "id": "2000001", "parentId": "2000" } }, 
-												{ "text": "长沙", "value": "ChangSha", "extendAttr": { "id": "2000002", "parentId": "2000" } }
-											] 
-								}
-						},
-                        { ele: 
-								{ 
-									type: 'select',
-									name: 'region', title: '区:',
-									withNull: true,
-									items: [
-												{ "text": "天河区", "value": "TH", "extendAttr": { "id": "1000001001", "parentId": "1000001" } },
-												{ "text": "海珠区", "value": "HZ", "extendAttr": { "id": "1000001002", "parentId": "1000001" } },
-												{ "text": "越秀区", "value": "YX", "extendAttr": { "id": "1000001003", "parentId": "1000001" } },
-												{ "text": "白云区", "value": "BY", "extendAttr": { "id": "1000001004", "parentId": "1000001" } },
-												{ "text": "花都区", "value": "HD", "extendAttr": { "id": "1000002001", "parentId": "1000002" } },
-												{ "text": "aa县", "value": "aa", "extendAttr": { "id": "2000001001", "parentId": "2000001" } },
-												{ "text": "望城区", "value": "wc", "extendAttr": { "id": "2000002001", "parentId": "2000002" } },
-												{ "text": "雨花区", "value": "yh", "extendAttr": { "id": "2000002002", "parentId": "2000002" } }
-											]
-								}
-						},
-                  ]
-            ];
-            var bsForm = new BSForm({ eles: eles,autoLayout: true }).Render('formContainer', function (sf) {
-                //编辑页面的绑定
-                sf.InitFormData({
-                    province: 'GuangDong',
-                    city: 'GuangZhou',
-                    region:'TH'
-                });
-                //必须先赋值再生成插件
-                global.Fn.CascadeSelect({ targets: ['province', 'city', 'region'], primaryKey: 'data-id', relativeKey: 'data-parentId' });
-            });
+	if (cityName == "nanjing")
+	{
+		var dataCustom = [
+			{'v': '南京市', 'n': '南京市', 's': [
+			  {'v': '玄武区', 'n': '玄武区', 's': [
+				{'v': '1街道', 'n': '1街道'},
+				{'v': 'street', 'n': '5'},
+				{'v': 'street', 'n': '6'},
+				{'v': 'street', 'n': '7'},
+				{'v': 'street', 'n': '8'},
+				{'v': 'street', 'n': '9'},
+				{'v': 'street', 'n': '10'}
+			  ]},
+			  {'v': '鼓楼区', 'n': '鼓楼区', 's': [
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'}
+			  ]}
+			]},
+		  ];
+	}
+	else if (cityName == "shanghai")
+	{
+		var dataCustom = [
+			{'v': '上海市', 'n': '上海市', 's': [
+			  {'v': '长宁区', 'n': '长宁区', 's': [
+				{'v': '1街道', 'n': '1街道'},
+				{'v': 'street', 'n': '5'},
+				{'v': 'street', 'n': '6'},
+				{'v': 'street', 'n': '7'},
+				{'v': 'street', 'n': '8'},
+				{'v': 'street', 'n': '9'},
+				{'v': 'street', 'n': '10'}
+			  ]},
+			  {'v': '闸北区', 'n': '闸北区', 's': [
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'},
+				{'v': 'street', 'n': '11'}
+			  ]}
+			]},
+		];	
+	}
+	
+	$('#street_info').cxSelect({
+		selects: ['city', 'district', 'street'],
+		jsonValue: 'v',
+    	data: dataCustom
+	});
+}
+
+function setSelectDateTimeData()
+{
+	var urlDateTime = 'js/datetime.json';
+	$.cxSelect.defaults.url = urlDateTime;
+	
+	$('#serve_date_time').cxSelect({
+    selects: ['serve_date', 'serve_time'],
+    emptyStyle: 'none'
+  });
+
+}
+
+
+//validate
+$(document).ready(function() {
+    $('#form_addr').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            
+            city: {
+                validators: {
+                    notEmpty: {
+                        message: '城市选择不能为空'
+                    }
+                }
+            },
+			district: {
+                validators: {
+                    notEmpty: {
+                        message: '区/县选择不能为空'
+                    }
+                }
+            },
+			street: {
+                validators: {
+                    notEmpty: {
+                        message: '街道选择不能为空'
+                    }
+                }
+            },
+            detail_addr: {
+                validators: {
+                    notEmpty: {
+                        message: '详细地址信息不能为空'
+                    }
+                }
+            },
+            serve_date: {
+                validators: {
+                    notEmpty: {
+                        message: '服务日期信息不能为空'
+                    }
+                }
+            },
+            serve_date: {
+                validators: {
+                    notEmpty: {
+                        message: '服务时间信息不能为空'
+                    }
+                }
+            },
+			username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: '用户姓名不能为空'
+                    },
+                    stringLength: {
+                        min: 2,
+                        max: 5,
+                        message: '姓名必须在2位数及5位数之间'
+                    },
+                }
+            },
+            phoneNumberCN: {
+            	validators: {
+					notEmpty: {
+                        message: '手机号码不能为空'
+                    },
+            		phone: {
+            			message: '手机号码有误，请重新输入',
+            			country: 'CN'
+            		}
+            	}
+            },
+        }
+    });
 });

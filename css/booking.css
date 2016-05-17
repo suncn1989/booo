@@ -13,7 +13,7 @@ body
 .innerPadding
 {
 	padding-left:30px;
-	padding-right:30px;
+	padding-right:100px;
 	padding-top:30px;
 }
 
@@ -37,27 +37,40 @@ body
 	border-radius: 8px 8px 8px 8px;
 }
 
-.city
+.C_city
 {
 	height:400px;
 }
 
 .addr
 {
-	height:300px;
+	height:100%;
+	margin-top:20px;
+	padding-bottom:20px;
+}
+
+.marginB10
+{
+	margin-bottom:10px;
+}
+
+.marginT20
+{
 	margin-top:20px;
 }
 
 .userInfo
 {
-	height:300px;
+	height:100%;
 	margin-top:20px;
+	padding-bottom:20px;
 }
 
 .confirm
 {
 	margin-top:30px;
 	height:40px;
+	text-align:center;
 }
 
 .foot
