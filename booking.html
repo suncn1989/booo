@@ -47,42 +47,93 @@
          </div>
          
          <form id="form_addr" method="post" class="form-horizontal" action="">
-         
+          <!-- sev addr & time -->
+             <div class="addr circle_radius bg_white innerPadding">
+                <p class="container_p">技师选择：</p>
+                <div class="col-xs-offset-1">
+					<div id="massagist_choose" class="row">
+                    <!--
+                      <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                          <img src="images/1.png" alt="技师1" class="massagist_head">
+                        </a>
+                      </div>
+                      <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                          <img src="images/2.png" alt="技师2" class="massagist_head">
+                        </a>
+                      </div>
+                      <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                          <img src="images/3.png" alt="技师3" class="massagist_head">
+                        </a>
+                      </div>
+                      <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                          <img src="images/4.png" alt="技师4" class="massagist_head">
+                        </a>
+                      </div>
+                      -->
+                    </div>
+                    <div class="row">    
+                     <nav>
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    </div>   
+                </div>
+             </div>
+             <!-- sev addr & time -->
+             
+             <!-- tech choose -->
              <div class="addr circle_radius bg_white innerPadding">
                 <p class="container_p">服务地址及时间：</p>
                 <div class="col-xs-offset-1">
-                    
-                        <div class="form-group">
-                            <fieldset id="street_info">
-                                <div class="marginB10">
-                                    <label class="control-label">请选择服务地址：</label>
-                                </div>
-                                <div class="row">
-                                    
-                                    <div class="col-md-4 col-xs-12">
-                         
-                                        <select class="city form-control" data-first-title="选择城市" name="city">
-                                            <option value="">请选择</option>
-                                            <!--<option value="南京市" selected>南京市</option>-->
-                                        </select>
-                                     </div>
-                                     <div class="col-md-4 col-xs-12"> 
+					<div class="form-group">
+                        <fieldset id="street_info">
+                            <div class="marginB10">
+                                <label class="control-label">请选择服务地址：</label>
+                            </div>
+                            <div class="row">
+                            	<div class="col-md-4 col-xs-12">
+                     
+                                    <select class="city form-control" data-first-title="选择城市" name="city" id="selected_city">
+                                        <option value="">请选择</option>
+                                        <!--<option value="南京市" selected>南京市</option>-->
+                                    </select>
+                                 </div>
+                                 <div class="col-md-4 col-xs-12"> 
     
-                                        <select class="district form-control" data-first-title="选择区/县" name="district">
-                                            <option value="">请选择</option>
-                                            <!--<option value="玄武区" selected>玄武区</option>-->
-                                        </select>
-                                     </div>
-                                     <div class="col-md-4 col-xs-12"> 
+                                    <select class="district form-control" data-first-title="选择区/县" name="district" id="selected_">
+                                        <option value="">请选择</option>
+                                        <!--<option value="玄武区" selected>玄武区</option>-->
+                                    </select>
+                                 </div>
+                                 <div class="col-md-4 col-xs-12"> 
     
-                                        <select class="street form-control" data-first-title="选择街道" name="street">
-                                            <option value="">请选择</option>
-                                            <!--<option value="1街道" selected>4</option>-->
-                                        </select>
-                                     </div>
-                                
-                                </div>
-                            </fieldset>
+                                    <select class="street form-control" data-first-title="选择街道" name="street">
+                                        <option value="">请选择</option>
+                                        <!--<option value="1街道" selected>4</option>-->
+                                    </select>
+                                 </div>
+                            
+                            </div>
+                        </fieldset>
                         </div>
                         
                         <div class="form-group">
@@ -128,14 +179,9 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                            
-    
                 </div>
-                
-                
              </div>
+             <!-- tech choose -->
              
              <div class="userInfo circle_radius bg_white innerPadding">
                 <p class="container_p">用户信息：</p>
@@ -165,7 +211,7 @@
              </div>
              
              <div class="confirm">
-                <button type="submit" class="btn btn-primary btn-lg">确认预约</button>
+                <button type="submit" class="btn btn-primary btn-lg" id="btn_booking_submit">确认预约</button>
              </div>
          </form>
 	</div>

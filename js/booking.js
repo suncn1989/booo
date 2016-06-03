@@ -13,6 +13,11 @@ $(document).ready(function ()
 		console.log($(this).attr("id"));
 		setSelectData($(this).attr("id"));
 	});
+	
+	var pic_count = 4;
+	
+	
+	showMassagistList();
 });
 
 function setSelectData(cityName)
@@ -168,3 +173,64 @@ $(document).ready(function() {
         }
     });
 });
+
+$("#btn_booking_submit").click(
+	function()
+	{
+		$.ajax(
+			{ 
+				type: "POST", 
+				url: "RequestData.ashx", 
+				contentType: "application/json; charset=utf-8", 
+				data: JSON.stringify(GetJsonData()), 
+				dataType: "json", 
+				success: function (message) 
+				{ 
+					if (message > 0) 
+					{ 
+						alert("请求已提交！我们会尽快与您取得联系"); 
+					} 
+				}, 
+				error: function (message) 
+				{ 
+					console.log("Submit ERROR!");
+				} 
+			}
+		); 
+	}
+);
+
+function GetJsonData()
+{
+	var json = {
+		
+	};
+	return json;
+}
+
+function showMassagistList()
+{
+	//$("#massagist_choose").append("<div>foagoaemgadokgaqpogoadpgola</div>");
+	getJsonData_massagist();
+}
+
+function getJsonData_massagist()
+{
+	/*
+	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?", function(data){
+  $.each(data.items, function(i,item){
+    $("<img/>").attr("src", item.media.m).appendTo("#massagist_choose");
+    if ( i == 3 ) return false;
+  });
+});
+	*/
+	
+	$.getJSON("./js/staffs.json",function(data)
+	{
+		for (var i=0; i<data.staffs.length; i++)
+		{
+			//$("#massagist_choose").append("<div>" + data.staffs[i].name + "</div>");
+			$("#massagist_choose").append("<div class=\"col-xs-6 col-md-3\"><a href=\"#\" class=\"thumbnail\"><img src=\"" + data.staffs[i].photo + "\" alt=\"技师1\" class=\"massagist_head\"></a></div>");
+		}
+	});
+}

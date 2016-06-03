@@ -77,3 +77,10 @@ body
 {
 	height:100px;
 }
+
+.massagist_head
+{
+	height: 120px;
+	width: 90px;
+	display: block;
+}
