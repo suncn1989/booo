@@ -1,14 +1,36 @@
-﻿	{
-		"staffs": [
-			{ "id":"jishi_1", "name":"张三", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/1.png", "tag":"", "status":""},
-			{ "id":"jishi_2", "name":"嘎嘎", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/2.png", "tag":"", "status":""},
-			{ "id":"jishi_3", "name":"个啊", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/3.png", "tag":"", "status":""},
-			{ "id":"jishi_4", "name":"坏人", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/4.png", "tag":"", "status":""},
-			{ "id":"jishi_5", "name":"有一天", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/5.png", "tag":"", "status":""},
-			{ "id":"jishi_6", "name":"偶然偶尔", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/6.png", "tag":"", "status":""},
-			{ "id":"jishi_7", "name":"留个", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/7.png", "tag":"", "status":""},
-			{ "id":"jishi_8", "name":"陪我", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/8.png", "tag":"", "status":""},
-			{ "id":"jishi_9", "name":"藕去", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/9.png", "tag":"", "status":""},
-			{ "id":"jishi_9", "name":"藕去", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/10.png", "tag":"", "status":""}
-		]
-	}
+{
+	"staffs": [
+		{ "id":"jishi_1", "name":"张三", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/1.png", "tag":"", "status":""},
+		{ "id":"jishi_2", "name":"嘎嘎", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/2.png", "tag":"", "status":""},
+		{ "id":"jishi_3", "name":"个啊", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/3.png", "tag":"", "status":""},
+		{ "id":"jishi_4", "name":"坏人", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/4.png", "tag":"", "status":""},
+		{ "id":"jishi_5", "name":"有一天", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/5.png", "tag":"", "status":""},
+		{ "id":"jishi_6", "name":"偶然偶尔", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/6.png", "tag":"", "status":""},
+		{ "id":"jishi_7", "name":"留个", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/7.png", "tag":"", "status":""},
+		{ "id":"jishi_8", "name":"陪我", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/8.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"藕去", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/9.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"gda", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/10.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"1", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/2.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"2", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/3.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"3", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/4.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"4", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/5.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"5", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/6.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"6", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/7.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"7", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/8.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"8", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/9.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"9", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/10.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"10", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/1.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"11", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/2.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"12", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/3.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"13", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/4.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"14", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/5.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"7", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/8.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"8", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/9.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"9", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/10.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"10", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/1.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"11", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/2.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"12", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/3.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"13", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/4.png", "tag":"", "status":""},
+		{ "id":"jishi_9", "name":"14", "birthday":"", "workyear":"", "phone":"", "certno":"", "duration":"", "certificate":"", "itemid":"", "address":"", "photo":"images/5.png", "tag":"", "status":""}
+	]
+}
